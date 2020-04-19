@@ -310,8 +310,7 @@ class RequestBuilder extends kaltura.VolatileRequestData {
 		else {
 			body = jsonBody;
 		}
-
-		options.headers['Content-Length'] = body.length;
+		
 		options.body = body;
 
 		client.request(options, (err, response, data) => {
